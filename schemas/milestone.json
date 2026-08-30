@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Milestone",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "goal_id": { "type": "string" },
+    "title": { "type": "string" },
+    "target_value": { "type": "number" },
+    "due_date": { "type": "string", "format": "date" },
+    "achieved_at": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "required": ["id", "goal_id", "title", "target_value", "due_date"]
+}
